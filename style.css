@@ -30,7 +30,7 @@ body {
 }
 
 #clock:hover {
-	color: black;
+	color: gray;
 	cursor: pointer;
 	font-size: 9.5vw;
 }
@@ -66,10 +66,20 @@ i:hover {
 	margin-left: 97%;
 }
 
-#shadow {
-	background-color: black;
+#loginPage {
+	display: none;
 	position: fixed;
-	padding: 50% 100%;
-	top:0%;
-	opacity: 0.5;
+	top:30%;
+	left: 40%;
+	background-color: white;
+	padding: 100px 100px;
+	opacity: 0.7;
+	border: 2px solid black;
+	border-radius: 10%;
+	font-family: 'Courier New', Courier, monospace;
 }
+
+#loginPage input {
+	width: 100%;
+}
+

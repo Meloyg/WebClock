@@ -31,7 +31,15 @@ const getTime = () => {
 }
 
 const showLogin = () => {
-    alert("hello");
+    document.getElementById("loginPage").style.display = "block";
+}
+
+const closeTap = () => {
+    document.getElementById("loginPage").style.display = "none";
+}
+
+const checkPassword = () => {
+    
 }
 
 
