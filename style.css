@@ -1,102 +1,75 @@
 body {
     margin: 0;
-    width: 100%;
-}
-
-#Cbody {
-    width: 100%;
-    /* height: 1080px; */
-    position: relative;
+	width: 100%;
+	background-color: black;
 }
 
 #image {
-    width: 100%;
-    height:auto;
-
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	opacity: 0.5;
 }    
 
 #clock {
-    text-align: center;
     /* margin-top: 15%; */
-    position: absolute;
-    font-size: 15vw;
+    position: fixed;
+    font-size: 9vw;
     font-weight: bold;
     color:white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	top: 46%;
+	left: 55%;
+	transition: 0.4s;
 }
 
-#label1 {
-    position: absolute;
+#date {
+	font-size: 4vw;
 }
 
-.animation-area {
-	background: linear-gradient(to left, #8942a8, #ba382f);
-	width: 100%;
-	height: 100vh;
+#clock:hover {
+	color: black;
+	cursor: pointer;
+	font-size: 9.5vw;
 }
-.box-area {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+
+footer{
+	position: fixed;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	top: 97%;
+	left: 48%;
+	transition: 0.4s;
+}
+
+i{
+	font-size: 24px;
+	letter-spacing: 10px;
+	
+}
+
+i:hover {
+	color: black;
+	cursor: pointer;
+}
+
+#user {
 	overflow: hidden;
+	position: fixed;
+	color: white;
+	transition: 0.4s;
+	font-size: 50px;
+	margin-left: 97%;
 }
-.box-area li {
-	position: absolute;
-	display: block;
-	list-style: none;
-	width: 25px;
-	height: 25px;
-	background: rgba(255, 255, 255, 0.2);
-	animation: animate 20s linear infinite;
-	bottom: -150px;
-}
-.box-area li:nth-child(1) {
-	left: 86%;
-	width: 80px;
-	height: 80px;
-	animation-delay: 0s;
-}
-.box-area li:nth-child(2) {
-	left: 12%;
-	width: 30px;
-	height: 30px;
-	animation-delay: 1.5s;
-	animation-duration: 10s;
-}
-.box-area li:nth-child(3) {
-	left: 70%;
-	width: 100px;
-	height: 100px;
-	animation-delay: 5.5s;
-}
-.box-area li:nth-child(4) {
-	left: 42%;
-	width: 150px;
-	height: 150px;
-	animation-delay: 0s;
-	animation-duration: 15s;
-}
-.box-area li:nth-child(5) {
-	left: 65%;
-	width: 40px;
-	height: 40px;
-	animation-delay: 0s;
-}
-.box-area li:nth-child(6) {
-	left: 15%;
-	width: 110px;
-	height: 110px;
-	animation-delay: 3.5s;
-}
-@keyframes animate {
-	0% {
-		transform: translateY(0) rotate(0deg);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(-800px) rotate(360deg);
-		opacity: 0;
-	}
+
+#shadow {
+	background-color: black;
+	position: fixed;
+	padding: 50% 100%;
+	top:0%;
+	opacity: 0.5;
 }

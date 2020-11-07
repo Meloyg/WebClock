@@ -1,0 +1,10 @@
+{
+    "manifest_version": 2,
+    "name": "meloGuanDashBoard",
+    "description":"DashBoard for students",
+    "version": "1.0.0",
+    "broswer_action": {
+        "default_popup": "index.html"
+    },
+    "permissions":["activeTap"]
+}

@@ -6,24 +6,33 @@ const getTime = () => {
     let min = time.getMinutes();
     let second = time.getSeconds();
     if (second.toString().length == 1) {
-        second = "0"+second;
+        second = "0" + second;
     }
+    if (min.toString().length == 1) {
+        min = "0" + min;
+    }
+
+    let date = time.getDate();
+    let month = time.getMonth();
+    let year = time.getFullYear();
+
+    let date1 = date + "/" + month + "/" + year;
 
 
     let content = hour + ": " + min + ": " + second;
-    document.getElementById("clock").innerHTML = content;
 
+    document.getElementById("clock").innerHTML = content;
+    document.getElementById("clock").innerHTML += "<br><div id='date'>"+date1+"</div>";
+
+    
     let t = setTimeout(getTime, 500);
 
-    console.log(hour,min, second);
+    console.log(hour, min, second);
 }
 
-const getName = () => {
-    let name = document.getElementById("name").value;
-    document.getElementById("clock") += name;
-    console.log(name);
+const showLogin = () => {
+    alert("hello");
 }
-
 
 
 
