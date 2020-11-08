@@ -21,7 +21,7 @@ body {
     color:white;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	top: 46%;
-	left: 55%;
+	left: 50%;
 	transition: 0.4s;
 }
 
@@ -62,8 +62,9 @@ i:hover {
 	position: fixed;
 	color: white;
 	transition: 0.4s;
-	font-size: 50px;
+	font-size: 40px;
 	margin-left: 97%;
+	top: 11%;
 }
 
 #loginPage {
@@ -83,3 +84,8 @@ i:hover {
 	width: 100%;
 }
 
+#widget-iframe {
+	left: 10%;
+	border: none;
+	position: fixed;
+}
