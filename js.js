@@ -13,7 +13,7 @@ const getTime = () => {
     }
 
     let date = time.getDate();
-    let month = time.getMonth();
+    let month = time.getMonth() + 1;
     let year = time.getFullYear();
 
     let date1 = date + "/" + month + "/" + year;
@@ -53,6 +53,11 @@ const checkPassword = () => {
 }
 
 (document, 'script', 'weatherwidget-io-js');
+
+
+const showCalendar = () => {
+    alert(1);
+}
 
 
 

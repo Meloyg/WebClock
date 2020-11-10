@@ -89,3 +89,14 @@ i:hover {
 	border: none;
 	position: fixed;
 }
+
+#notes {
+	position: relative;
+}
+
+#calendar {
+	position: relative;
+	color: white;
+	font-size: 25px;
+	left: 1%;
+}
